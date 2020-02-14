@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/memtest_1.css') }}">
+{% endblock %}
+
+
+{% block body %}
+  <div class="center" id="info">
+    <h1>Here's how this works</h1>
+    <h2>On your screen will slowly appear a bunch of numbers.
+      Your goal is to recite the numbers after they disappear.
+      <br><br>
+      The only tool that you have is your own memory,
+      so no writing down the numbers as you see it!
+      Don't worry though, you'll get one second for each digit.
+      Surely that'll be enough time, right? ;)
+      <br><br>
+      Initially, the list will be short, but it'll get longer as you progress.
+      How many digits can you remember?
+    </h2>
+  </div>
+  <div class="center" id="test">
+    <button id="start">Ready</button>
+
+    <h3 id="numbers">
+    </h3>
+
+    <input type="text" id="attempt" value = "">
+  </div>
+{% endblock %}
+
+{% block script %}
+  <script src="{{url_for('static', filename='javascript/memtest_1.js')}}">
+    // var attempt = {{form.attempt}}
+  </script>
+{% endblock %}

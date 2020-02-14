@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+
+{% block body %}
+  <div class="banner">
+    <h1>Learning to Learn! Hurray!</h1>
+    <h2>How do we learn? How can this help us?</h2>
+    <p>To investigate, let's begin with these modules</p>
+  </div>
+  <div class = "ToC">
+  <ul style="list-style-type:none;">
+    <li><a href="/memtest_1">How does memory work?</a></li>
+      <ul style="list-style-type:none;" class="inner">
+        <li>How do we use memory?</li>
+        <li>How is memory stored</li>
+      </ul>
+    <li>What does this mean for us?</li>
+      <ul style="list-style-type:none;" class="inner">
+        <li>How we can study better</li>
+        <li>Using the tools we learned</li>
+      </ul>
+  </ul>
+  <div>
+  <!-- <button id="url_memtest_1">Begin!</button> -->
+
+
+{% endblock %}
+
+{% block script %}
+  <script type="text/javascript" src="{{url_for('static', filename='javascript/main.js')}}"></script>
+{% endblock %}

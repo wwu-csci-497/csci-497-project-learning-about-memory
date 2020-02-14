@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  transition: background-color .20s;
+}
+
+.center {
+  margin:auto;
+  text-align: center;
+}
+
+#attempt {
+  display: none;
+  /* position: absolute; */
+  margin-top:15%;
+    /* width: 5%; */
+  /* left: 47.5%; */
+}
+
+#numbers {
+  /* position: absolute; */
+  margin-top: 10%;
+}
+
+.ToC {
+  width:65%;
+  margin: auto;
+}
+
+.inner {
+  font-size: 18px;
+}
+
+ul {
+  font-size: 24px;
+  background: #ff9999;
+  padding: 20px;
+}
+
+ul li {
+  background: #ffe5e5;
+  padding: 5px;
+  margin-left: 35px;
+}

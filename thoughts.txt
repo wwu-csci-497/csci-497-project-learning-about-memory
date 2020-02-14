@@ -1,0 +1,18 @@
+First page will be for a Table of Contents.
+This will allow users to navigate through the lesson.
+
+First lesson will be about Working Memory.
+It'll begin by asking the user to play Miller's (1956) Experiment.
+Then it'll allow the user to reflect, and tell them what's going on.
+
+Afterwards, they'll be introduced to chunking,
+where they'll be needed to demonstrate it.
+Again, the user will have to reflect and understand why this works.
+
+Finally there will be a short quiz on the previous concepts.
+
+
+
+This will be the behavior loop for the site.
+This loop will happen twice: once for memory, and a second time for studying
+
