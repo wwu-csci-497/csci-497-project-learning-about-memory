@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/m1.css') }}">
+{% endblock %}
+
+
+{% block body %}
+<div class="center">
+  <h1>
+    This is Chunking
+  </h1>
+  <p>
+    Whereas in the first experiment you had to remember each digit by itself,
+    for this one you could "group" them together.
+    <b>Chunk them</b>, so that you don't have to remember any individual letter, but only the single grouping.
+    <br><br>
+    This was made easier for you too, with the spaces between each word.
+    If you're not a citizen of the United States or aren't fluent in English you may still have trouble.
+    <br><br>
+    If you are, you've probably noticed that the letters given to you all spelled three letter words or acronyms.
+    <br><br>
+    This was done to help you chunk the letters together, into groups of meaning.
+    <br><br>
+    Chunking information into similar groups or categories allows you to remember more. In short-term memory, and long-term.
+    <br><br>
+    <b>It'll be incredibly helpful to you when learning and retaining new information.</b>
+
+  </p>
+  <br>
+  <div class="right">
+    <button class="button"><a href="/memtest_2">Continue</a></button>
+  </div>
+</div>
+{% endblock %}
+
+{% block script %}
+  <!-- <script type="text/javascript" src="{{url_for('static', filename='javascript/main.js')}}"></script> -->
+{% endblock %}

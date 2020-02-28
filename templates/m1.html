@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/m1.css') }}">
+{% endblock %}
+
+
+{% block body %}
+<div class="center">
+  <h1>
+    What just happened?
+  </h1>
+  <p>
+    <img src='../static/img/miller.jpg' class="image">
+    If you played that "game" on the previous page, you just participated in a variation of an  old experiment made in 1956 by someone called George Miller.
+    <br>
+    <br>
+    He discovered that people can store roughly 7 things in short-term memory. The capacity isn't a hard number, but for the most part it's 7 plus or minus 2.
+    <br><br>
+    Here's the thing though, in our experiment we used single numbers: Digits. What if we thought bigger, and used words? Or pictures? Or maybe even groups of numbers?
+    <br><br>
+    The fascinating thing about Miller's experiment is that while he found the capacity for short-term memory,
+    he also realized that we don't store individual things, but <i>chunks</i> of things.
+    <br><br>
+    But what does this mean for us?
+    <br><br>
+    <b>It means we can remember things better if we group them in meaningful ways.</b>
+  </p>
+  <br>
+  <div class="right">
+    <button class="button"><a href="/memtest_2">Continue</a></button>
+  </div>
+</div>
+{% endblock %}
+
+{% block script %}
+  <!-- <script type="text/javascript" src="{{url_for('static', filename='javascript/main.js')}}"></script> -->
+{% endblock %}

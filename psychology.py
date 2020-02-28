@@ -9,7 +9,7 @@ app.config['SECRET_KEY'] = 'TRANSRIGHTS'
 # Forms
 class memtestForm(FlaskForm):
     attempt = IntegerField('attempt')
-    
+
 # Routes
 @app.route('/')
 def home():
@@ -18,14 +18,22 @@ def home():
 @app.route('/memtest_1', methods=['GET', 'POST'])
 def memtest_1():
     form = memtestForm()
-
-    # if form.validate_on_submit():
-        # print(form.attempt.data)
-        # return '<h1>You typed {}'.format(form.attempt.data)
-        # return('', 204)
     print(form.errors)
-
     return render_template("memtest_1.html", form=form)
+
+@app.route('/m1')
+def m1():
+    return render_template('m1.html')
+
+@app.route('/memtest_2', methods=['GET', 'POST'])
+def memtest_2():
+    form = memtestForm()
+    print(form.errors)
+    return render_template("memtest_2.html", form=form)
+
+@app.route('/m2')
+def m2():
+    return render_template('m2.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

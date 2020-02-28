@@ -15,7 +15,19 @@ body {
   width: 70%;
   text-align: center;
   font-size: 28px;
-  background-color: #fff0fc;
+  text-shadow:
+    0.07em 0 #fff0fc,
+    0 0.07em #fff0fc,
+    -0.07em 0 #fff0fc,
+    0 -0.07em #fff0fc,
+    -0.07em -0.07em #fff0fc,
+    -0.07em 0.07em #fff0fc,
+    0.07em -0.07em #fff0fc,
+    0.07em 0.07em #fff0fc;
+  background-image: url('../img/Banner.png');
+  background-repeat: repeat;
+  background-size: 240px 180px;
+
 }
 
 .ToC {
