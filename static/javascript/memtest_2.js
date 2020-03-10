@@ -5,7 +5,7 @@ var errors = 0;
 var firstError = 0;
 var rand = "";
 
-var items = ["IBM", "FBI", "USA", "UWU", "LOL", "GTG", "BRB", "DOG", "COW", "CAT", "MOO", "ATM"];
+var items = ["IBM", "FBI", "USA", "FAN", "LOL", "GTG", "BRB", "DOG", "COW", "CAT", "MOO", "ATM"];
 
 console.log(numbers);
 

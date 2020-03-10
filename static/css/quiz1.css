@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  font-weight: bold;
+  background-color: #E2B0FF;
+  /* color: #3b0b11;  */
+  color: #4a4a4a;
+  font-size:24px;
+}
+
+.center {
+  margin:auto;
+  width:65%;
+}
+
+.right {
+  float:right;
+}
+
+li {
+  font-size:36px;
+  list-style: none;
+}
+
+input {
+  outline:0;
+}

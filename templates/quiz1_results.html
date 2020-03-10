@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/quiz1_results.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+{% endblock %}
+
+{% block body %}
+
+{% if c < t %}
+  {% if c > 1 %}
+    <h1>You got {{c}} out of {{t}} correct!</h1>
+  {% elif c == 1 %}
+    <h1>You only got {{c}} out of {{t}} correct</h1>
+  {% else %}
+    <h1>You got nothing correct</h1>
+  {% endif %}
+
+  <h2>Here's some review for the ones you got wrong:</h2>
+  <ul>
+    {% for i in o %}
+    {% set rowloop = loop %}
+      {% for j in w %}
+        {% if i == j %}
+          <li class="questions">{{i}}</li>
+          <p class="answers">{{r[rowloop.index - 1]}}</p>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </ul>
+
+{% else %}
+  <h1>Wow you got everything right!</h1>
+{% endif %}
+
+
+<button id="button" class="right"><a href="/m3">Continue</a></button>
+
+{% endblock %}
+
+{% block script %}
+  <script type="text/javascript" src="{{url_for('static', filename='javascript/quiz1_results.js')}}"></script>
+{% endblock %}

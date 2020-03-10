@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/m2.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<div class="center" style="width:75%;">
+<h1>To recap</h1>
+<div style="font-size:24px;">
+<p>We learned about the capacity of working memory. Then we learned about chunking.
+<br><br><br>
+Finally, we took a quiz. It wasn't very hard, but that wasn't the point.
+The point is that recalling information is incredibly important to learning.
+<br><br><br>
+Instead of cramming and using repetition, it's much better to think deeply and make meaningful connections, studying in short sessions,
+and then recall through a self administered quiz. As long as the questions aren't too easy and you aren't testing
+what you already know easily, you'll be able to remember things much better.
+</p>
+</div>
+{% endblock %}
+
+
+{% block script %}
+  <!-- <script type="text/javascript" src="{{url_for('static', filename='javascript/quiz1.js')}}"></script> -->
+{% endblock %}

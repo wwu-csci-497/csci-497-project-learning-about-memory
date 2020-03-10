@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/quiz1.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<div class="center">
+<h1>Now a quick quiz:</h1>
+<form action='/quiz1_results' method='POST'>
+  <ul>
+    {% for i in q %}
+      <li>{{i}}</li>
+      <div style="height:10px;font-size:1px;">&nbsp;</div>
+      {% for j in o[i] %}
+        <input type='radio' value='{{j}}' name='{{i}}' class="choose"/>{{j}}
+        <div style="height:15px;font-size:1px;">&nbsp;</div>
+      {% endfor %}
+      <br>
+    {% endfor %}
+  </ul>
+  <input type="submit" value="Submit" id="button" class="right"/>
+</form>
+</div>
+
+{% endblock %}
+
+
+{% block script %}
+  <script type="text/javascript" src="{{url_for('static', filename='javascript/quiz1.js')}}"></script>
+{% endblock %}
